@@ -3,5 +3,10 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
+  base: '/example-restaurant-web/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+  }
 })
 
