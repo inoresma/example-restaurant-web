@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:netlify": "vite build",
+    "build:gh-pages": "VITE_BASE_PATH=/example-restaurant-web/ vite build",
     "preview": "vite preview",
     "deploy": "npm run build && echo 'Build completado. Sube manualmente la carpeta dist a la rama gh-pages'"
   },
